@@ -13172,6 +13172,7 @@ cdngtm.com
 cdnhwc1.com
 cdnhwc2.com
 cdnhwc3.com
+cdnhwc5.com
 cdnhwc6.com
 cdnhwchcg02.com
 cdnhwcibv122.com
@@ -13212,6 +13213,7 @@ cdryny.com
 cds-cdn.v.aaplimg.com
 cds.apple.com
 cds.apple.com.akadns.net
+cdsassets.apple.com
 cdsb.com
 cdsb.mobi
 cdsenfa.com
@@ -30403,6 +30405,7 @@ ipason.com
 ipay.so
 ipcc.com
 ipcchain.org
+ipcdn.apple.com
 ipcfun.com
 ipchaxun.com
 ipchaxun.net
@@ -43547,6 +43550,7 @@ puasu.com
 puata.info
 pubchn.com
 pubg8x.com
+publicassets.cdn-apple.com
 publiccms.com
 pubmed007.com
 pubone.cc
@@ -48920,6 +48924,7 @@ smohan.net
 smokeliq.com
 smoothgroup.cc
 smovie168.com
+smp-device-content.apple.com
 smpeizi.com
 smppw.com
 sms9.net
@@ -57190,7 +57195,6 @@ www.pandora.net
 www.redhat.com
 www.samsung.com
 www.st.com
-www.sulwhasoo.com
 www.thinkpad.com
 www.tzoo-img.com
 www.vive.com
