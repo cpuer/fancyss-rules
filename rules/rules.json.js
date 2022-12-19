@@ -14,9 +14,9 @@
   },
   "cdn_china": {
     "name": "cdn.txt",
-    "date": "2022-12-18 03:49",
-    "md5": "38bbedb4f16dd83dfd409cd6c90367f9",
-    "count": "65074"
+    "date": "2022-12-20 03:49",
+    "md5": "c618e9e308e2157c080704e1102486ab",
+    "count": "65025"
   },
   "apple_china": {
     "name": "apple_china.txt",
