@@ -16,6 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Check Permissions
+        run: ls -ld /var/cache/apt/archives
+
       - name: Cache apt packages
         uses: actions/cache@v3
         with:
