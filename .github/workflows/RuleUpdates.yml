@@ -1,0 +1,50 @@
+name: Update Fancyss Rules
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/rules.yml'
+      - 'rules/auto_update/*'
+  workflow_dispatch:
+  schedule:
+    - cron: '45 19 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Cache apt packages
+        uses: actions/cache@v3
+        with:
+          path: /var/cache/apt/archives
+          key: ${{ runner.os }}-apt-${{ hashFiles('**/update_rules.sh') }}
+
+      - name: Run update script
+        run: |
+          apt-get update
+          apt-get -y install moreutils jq
+          cd rules/auto_update
+          bash update_rules.sh
+
+      - name: Commit to repo
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          if ! git diff --cached --quiet --exit-code rules/.; then
+            git add rules/.
+            git commit -m "Actions Auto Update at $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Delete old workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          keep_minimum_runs: 7
+          retain_days: 7
