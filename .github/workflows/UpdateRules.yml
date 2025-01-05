@@ -24,8 +24,8 @@ jobs:
 
       - name: Run update script
         run: |
-          apt-get update
-          apt-get -y install moreutils jq
+          sudo apt-get update
+          sudo apt-get -y install moreutils jq
           cd rules/auto_update
           bash update_rules.sh
 
