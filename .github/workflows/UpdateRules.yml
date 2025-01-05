@@ -20,9 +20,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: /var/cache/apt/archives
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/update_rules.sh') }}
+          key: Linux-apt-test
           restore-keys: |
-              ${{ runner.os }}-apt-
+            Linux-apt-
 
       - name: Run update script
         run: |
