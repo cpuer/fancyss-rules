@@ -55,7 +55,7 @@ get_chnroute(){
 	# wget https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/ipip_country/ipip_country_cn.netset -qO ../chnroute_tmp.txt
 
 	# source-2：misakaio, 20220604: total 3403 subnets, 298382954 unique IPs
-	  wget https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt -qO ../chnroute_tmp.txt
+	# wget https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt -qO ../chnroute_tmp.txt
 
 	# source-3: mayaxcn, 20220604: total 8625 subnets, 343364510 unique IPs
 	# wget https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt -qO ../chnroute_tmp.txt
@@ -67,6 +67,9 @@ get_chnroute(){
 	# wget -4 -O- http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest -qO ../apnic.txt
 	# cat apnic.txt| awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > ../chnroute_tmp.txt
 	# rm -rf ../apnic.txt
+
+ 	# source-6：china-operator-ip, 20250105: total 4277 subnets, 64838768 unique IPs
+	  wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt -qO ../chnroute_tmp.txt
 	
 	if [ ! -f "../chnroute_tmp.txt" ]; then
 		echo "chnroute download faild!"
