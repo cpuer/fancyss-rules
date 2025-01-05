@@ -20,9 +20,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: /var/cache/apt/archives
-          key: Linux-apt-test
-          restore-keys: |
-            Linux-apt-
+          key: ${{ runner.os }}-apt
 
       - name: Run update script
         run: |
