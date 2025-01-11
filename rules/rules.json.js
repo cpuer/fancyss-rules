@@ -7,16 +7,16 @@
   },
   "chnroute": {
     "name": "chnroute.txt",
-    "date": "2025-01-11 03:45",
-    "md5": "cdc2ffea42194288fa852b8a98dc2f33",
-    "count": "4275",
-    "count_ip": "287505434"
+    "date": "2025-01-12 03:46",
+    "md5": "a972772b681318223b605fdb11a84c1d",
+    "count": "4274",
+    "count_ip": "287504924"
   },
   "cdn_china": {
     "name": "cdn.txt",
-    "date": "2025-01-05 20:28",
-    "md5": "ece0ca4e2f709246b3dc18ccb0a9b369",
-    "count": "93604"
+    "date": "2025-01-12 03:46",
+    "md5": "348db6af3ccd86a09db971b0f6e749a6",
+    "count": "93624"
   },
   "apple_china": {
     "name": "apple_china.txt",
