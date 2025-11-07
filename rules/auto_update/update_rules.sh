@@ -69,7 +69,7 @@ get_chnroute(){
 	# rm -rf ../apnic.txt
 
  	# source-6：china-operator-ip, 20250105: total 4277 subnets, 64838768 unique IPs
-	  wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt -qO ../chnroute_tmp.txt
+	wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt -qO ../chnroute_tmp.txt
 	
 	if [ ! -f "../chnroute_tmp.txt" ]; then
 		echo "chnroute download faild!"
