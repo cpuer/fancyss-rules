@@ -1,9 +1,9 @@
 {
   "gfwlist": {
     "name": "gfwlist.conf",
-    "date": "2026-03-28 04:03",
-    "md5": "884d84a88bec2a75992d7e04eeaeeb84",
-    "count": "4165"
+    "date": "2026-04-04 04:02",
+    "md5": "a8ea0062e1347aa84f5bca0af4ecfa32",
+    "count": "4166"
   },
   "chnroute": {
     "name": "chnroute.txt",
